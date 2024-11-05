@@ -6,3 +6,5 @@ export * from './FloatingNoteTitle'
 export * from './MarkdownEditor'
 export * from './NotePreview'
 export * from './NotePreviewList'
+export * from "./LandingPage"
+export * from "./BackButton"
