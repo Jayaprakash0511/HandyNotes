@@ -1,8 +1,13 @@
 import { DeleteNoteButton, NewNoteButton, BackButton } from '@/components'
 import { ComponentProps } from 'react'
 
-export const ActionButtonsRow = ({setClicked, ...props }: ComponentProps<'div'>) => {
-  return (
+type ActionButtonsRowProps = {
+  setClicked: (value: boolean) => void; // or whatever the expected type is
+} & ComponentProps<'div'>;
+
+
+export const ActionButtonsRow: React.FC<ActionButtonsRowProps> = ({ setClicked, ...props }) => {
+    return (
     <div {...props}>
       <NewNoteButton />
       <DeleteNoteButton />

@@ -26,7 +26,7 @@ const App = ({ font, setClicked }) => {
   );
 };
 export const LandingPage = () => {
-  const [clicked, setClicked] = useState(false);
+  const [clicked, setClicked] = useState<any>(false);
 
   return (
     <div style={{ width: "100vw", height: "100vh", display: "flex", flexDirection: "column" }}>
@@ -58,7 +58,7 @@ export const LandingPage = () => {
               Create Note
             </button>
             <button className="custom-button" onClick={() => setClicked("handwritten")}>
-              Personalised Handwriting
+              Personalised Handwriting<sup><i>(beta)</i></sup>
             </button>
           </div>
         </>
